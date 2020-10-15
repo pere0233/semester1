@@ -1,0 +1,79 @@
+body {
+    font-family: Trebuchet MS, sans-serif;
+    color: rgb(172, 2, 67);
+    font-size: 18px;
+  }
+
+  header,
+  footer {
+    background-color: rgb(253, 227, 235);
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  head,
+  title.site-title {
+    color: rgb(173, 0, 72);
+  }
+
+  #my-image {
+    text-align: center;
+  }
+
+  #my-image {
+    box-shadow: 0px 0px 2px 1px black;
+  }
+
+   main ul {
+    list-style: square;
+  }
+
+  table td:nth-child(2n+1) {
+    background-color: rgba(46, 229, 253, 0.2);
+  }
+
+  nav ul {
+    list-style: none;
+  }
+
+  nav ul a {
+    color: rgb(255, 86, 148);
+    text-decoration: none;
+  }
+
+  nav ul a,
+  nav ul a:link,
+  nav ul a:visited {
+    background: rgb(199, 250, 247);
+     box-shadow: -2px 2px 4px 2px black;
+  }
+  
+  nav ul a:hover,
+  nav ul a:focus {
+    color: rgb(12, 0, 179);  
+    background: rgb(44, 235, 209);  
+    text-decoration: underline;
+  }
+  
+  nav ul a:active {
+    box-shadow: 0 0 4px 2px black;
+  }
+
+  main article h3 {
+    font-size: 1px;
+  }
+
+  body h1 {
+    text-decoration-line: underline;
+    font-variant: small-caps;
+  }
+
+  main h3 {
+    text-decoration-line: underline;
+  }
+
+  main h4 {
+    text-decoration-line: underline;
+  }
