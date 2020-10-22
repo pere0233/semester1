@@ -1,0 +1,169 @@
+body {
+    /* Adding background color */
+    background-color: #aad4cf;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  /* Styling to make text visible and centered */
+    color: white;
+    text-align: center;
+  /* updating the font to rem unit */
+    font-size: 3.5rem;
+  /* Padding used to generate space around an element's content */
+  padding: 1em;
+  width: 50vw;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h2,
+h3,
+h4,
+h5 {
+  text-align: left;
+}
+
+h2 {
+/* updating the font to rem unit */
+ font-size: 2rem;
+ padding-left: 1rem;
+ margin-top: 0;
+}
+
+h3,
+h4 {
+  font-size: 1.5rem;
+  padding-left: 1rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+nav li{
+    display: inline;
+    font-size: 1.5rem;
+    padding-right: 7rem;
+    padding-left: 7rem;
+    color: rgb(182, 255, 243);
+}
+
+p {
+    padding-right: 2rem;
+    padding-left: 1rem;
+}
+
+main {
+    background-color: rgb(215, 243, 243);
+    height: 1100px;
+    padding-bottom: 30px;
+    Margin: 0 auto;
+    max-width: 1000px;
+}
+
+main article img{
+    width: 250px;
+    float: left;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+main section ul {
+      padding-left: 2rem;
+}
+
+.content-container{
+    margin: 0 auto;
+    max-width: 1000px;
+}
+.content-container img{
+    max-width: 100%;
+}
+
+nav {
+    width: 1000px;
+    height: 60px;
+    padding: 2px 0px;
+    background-color: rgb(215, 243, 243);
+}
+
+nav li:nth-child(even){
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+/* Styling inputs selecting elements and textareas */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+/* Used to get rounded borders */
+    border-radius: 4px;
+/* Making sure that padding and width stays in place */
+    box-sizing: border-box;
+/* Adding a top margin */
+    margin-top: 6px;
+/* Adding a bottom margin */
+    margin-bottom: 16px;
+/* Allows to vertically resize the textarea */
+    resize: vertical
+}
+  
+/* When hovering over the textboxs for name and email, adds a light blue color */
+input[type=text]:hover {
+    background-color: #cdfff5;
+}
+  
+/* Adding some padding around the form */
+.container {
+    border-radius: 7px;
+    padding: 10px;
+}
+
+a:link, a:visited {
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    font-weight: bold;
+}
+  
+a:hover, a:active {
+    background-color: rgb(255, 255, 255);
+}
+
+.radio {
+    padding-bottom: 1rem;
+}
+
+button {
+    background-color: rgb(215, 243, 243);
+}
+
+/* When moving the mouse over the SEND button, adding a different color */
+button[type=submit]:hover {
+    background-color: rgb(255, 255, 255);
+}    
+
+button {
+    padding: 0.5em;
+    width: 4vw;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+form {
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+/* Alligning footer text to the right corner */
+  footer {
+    text-align: right;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
+}
