@@ -1,0 +1,331 @@
+/* html{
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after{
+  box-sizing: inherit;
+} */
+/*
+html {
+  border: 1px solid red;
+}
+// selecting every HTML element on the page
+* {
+  // inheriting the border value from the parent
+  border: inherit;
+}
+nav {
+  border: 1px solid blue;
+}
+// inside the h1 tag and before the content of the h1
+h1:before {
+  content: "\00BB";
+}
+// inside the h1 tag and after the content of the h1
+h1:after {
+  content: "\00AB";
+} */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: darkslategrey;
+  background-image: url("../images/white_brick_wall.png");
+  /* padding: 90px 0 0 0; */
+
+  /* EX 5 - fixing the overlapping heading */
+  padding-top: 90px;
+}
+
+/* 
+  This is a CSS Comment
+  Shortcut for adding the comment Control + / or Command + /
+*/
+h1 {
+  color: white;
+}
+
+p {
+  background-color: lightblue;
+}
+
+/* Selecting multiple elements to add same styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-decoration: underline;
+}
+
+/* Selecting child elements */
+nav ul {
+  list-style: none;
+}
+
+/* EX 1 - Display and Box-Sizing */
+nav ul li {
+  /* EX 1 -when we add display: inline-block the elements show next to each other */
+  display: inline-block;
+  /* EX 1 -Adding a width will work as the display is set to inline block */
+  width: 49%;
+  /* EX 1 -now adding padding will increase the total width */
+  padding: 1em;
+  /* EX 1 -We can add box-sizing to calculate the width including the padding */
+  box-sizing: border-box;
+  /*  adding separator border between list items */
+  border-right: 1px solid white;
+}
+
+/* removing the border separator from the last list item */
+nav ul li:last-child {
+  border: none;
+}
+
+/* Selecting child elements multiple level */
+nav ul a {
+  /* EX 1 -when we add display: block the anchor tags take full width of their parent */
+  display: block;
+  color: darkslategrey;
+  text-decoration: none;
+}
+
+/* Selecting HTML element with class name */
+/* EX 2 - display inline-block */
+.orange-link {
+  /* EX 2 -adding padding overlaps the links  */
+  padding: 1.5em;
+  /* EX 2 -width will have no effect without display inline-block or block */
+  width: 300px;
+  /* EX 2 -Adding inline-block fixes the padding issue */
+  display: block;
+  background: darkslategrey;
+  color: orange;
+  text-decoration: none;
+}
+
+/* EX 3 - Float */
+article,
+aside {
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid black;
+  padding: 1.5em;
+  width: 80%;
+  box-sizing: border-box;
+  float: left;
+}
+
+/* EX 3 -fixing the side effect of float */
+aside {
+  width: 20%;
+}
+
+section {
+  clear: both;
+}
+
+/* making the images take 100% width of the parent element */
+img {
+  width: 100%;
+}
+
+/* stop the container at a max width and center on the page */
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+/* EX 4 - Position */
+/* Position Absolute */
+.orange-link.large-text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* Selecting element with id value */
+/* Specificity: 0100 */
+
+#tow {
+  /* EX 4 -Absolute positioning based on relative element */
+  /* adding position for keeping the child element in the container */
+
+  position: relative;
+  background: orange url("../images/bread.jpg") no-repeat center center;
+  background-size: cover;
+  /* additional styles to make text visible */
+  color: white;
+  /* font-size: 24px; */
+  /* updating the font to rem unit */
+  font-size: 1.5rem;
+  /* 1.5 x 16 = 24px */
+  /* top right bottom left */
+  padding: 1em 1em 3em 1em;
+  /* 1em = 1 x 24px = 24px*/
+  width: 50vw;
+}
+
+/* Adding multiple classes to an element */
+/* 0010 */
+.large-text {
+  /* font-size: 20px; */
+  font-size: 1.25rem;
+}
+
+.danger {
+  color: red;
+}
+
+/* direct child selector */
+article>p {
+  /* font-size: 24px; */
+  font-size: 1.5rem;
+  font-weight: bold;
+  /* light, regular, normal, bold, bolder OR 100, 200, 300,.. 800 */
+  line-height: 1.5;
+  text-transform: lowercase;
+  text-align: center;
+}
+
+/* Adjacent Sibling Selector 
+Selecting only ul that is adjacent to a h3
+*/
+
+h3+ul {
+  /* thickness style color */
+  border: 1px solid black;
+}
+
+/* Attribute Selector */
+[href="#tow"] {
+  font-weight: bold;
+}
+
+/* EX 5 - navigation fixed */
+
+/* navigation - fixed */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  /* EX 5 -to fix the stacking order we area adding z-index */
+  /* EX 5 -even though 1 will do we use 999 to be safe */
+  z-index: 999;
+}
+
+/* Using Pseudo Classes 
+Styling Navigation
+*/
+
+nav ul a,
+nav ul a:link,
+nav ul a:visited {
+  background: orange;
+  /* horizontal vertical blur spread color */
+  box-shadow: -2px 2px 4px 2px black;
+}
+
+nav ul a:hover,
+nav ul a:focus {
+  text-decoration: underline;
+}
+
+nav ul a:active {
+  box-shadow: 0 0 4px 2px black;
+}
+
+/* Position related selectors */
+/* first child */
+aside ul li:first-child {
+  font-weight: bold;
+}
+
+/* last child */
+section ol li:last-child {
+  font-weight: bold;
+}
+
+/* 
+aside ul li:first-child,
+section ol li:last-child {
+  font-weight: bold;
+} 
+*/
+
+/* collapse table border into one */
+table {
+  border-collapse: collapse;
+}
+
+tbody tr:nth-child(even) {
+  /* hex color value with 6 characters */
+  background-color: #d5836c;
+}
+
+/* Where n is 0, 1, 2, .... until the number of elements */
+table th:nth-child(n),
+table td:nth-child(n) {
+  /* hex color value with 3 characters */
+  /* #000000 = #000 = black #FFFFFF = #FFF = White */
+  border: 1px solid #000;
+}
+
+/* 2n+1 if n is 0,1,2,3... then 2n+1  1,3,5,7... */
+table td:nth-child(2n+1) {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* 
+specificity: 0001
+*/
+footer {
+  background-color: aqua;
+}
+
+/* 
+specificity: 0002 
+*/
+body footer {
+  background: orange;
+}
+
+/* 
+specificity: 0001
+*/
+footer {
+  background-color: red;
+}
+
+/* specificity: 0010 */
+.site-footer {
+  background-color: cornflowerblue;
+}
+
+/* specificity: 0011 */
+footer.site-footer {
+  background-color: teal;
+}
+
+/* 0011 */
+blockquote.large-text {
+  text-transform: uppercase;
+}
+
+/* CSS Box Model */
+section p {
+  width: 50%;
+  /* padding: 1em; */
+
+  /* top right bottom left */
+  /* padding: 1em 2em 3em 4em; */
+
+  /* top-bottom left-right */
+  padding: 1em .5em;
+  /* em is the font size of the element in this case it is 16px(default) */
+  /* margin: 2em; */
+  margin: 2em auto;
+  border: 2px solid black;
+}
