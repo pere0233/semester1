@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Lone Starfish</title>
+    <!-- Linking css file to the index.html-->
     <link href="css/main.css" rel="stylesheet">
 </head>
 
 <!-- adding class content-container to the body tag -->
-<body class="content-container">
+<body>
+    <div class="container">
     <!-- Site Header -->
     <header>
     <!-- Adding image -->
@@ -53,21 +55,24 @@
     </article>
 
     <section>
-        <div class="container">
+        <div class="content-container">
         <h4>Contact to learn more</h4>
         <!-- Adding a form-->
-            <form action="thanks.html" method="GET">
-        
-            <label for="fullname">Your Name</label>
-            <input type="text" id="fullname" name="fullname" placeholder="Your Name.." required>
-    
-            <label for="youremail">Your Email</label>
-            <input type="text" id="youremail" name="youremail" placeholder="Your E-mail.." required>
-    
-            <label for="yourmessage">Your Message</label>
-            <textarea id="yourmessage" name="yourmessage"></textarea>
-        
-        <h5>Would you like to visit the Starfish?</h5>
+        <form action="thanks.html" method="get">
+            <div>
+              <label for="fullname">Your Name</label>
+              <input type="text" id="fullname" name="fullname" placeholder="Your Name.." required>
+            </div>
+            <div>
+              <label for="youremail">Your E-mail</label>
+              <input type="text" id="youremail" name="youremail" placeholder="Your E-mail.." required>
+            </div>
+            <div>
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message"></textarea>
+            </div>
+          
+            <h5>Would you like to visit the Starfish?</h5>
 
         <!-- Adding Radio options-->
         <div class="radio">
@@ -79,19 +84,19 @@
             <input type="radio" id="maybe" name="past">
         </div>
 
-    <!-- Adding button as "send"-->
-    <button type="submit">Send</button>
-</div>
-    </form>
+        <!-- Adding button as "send"-->
+        <button type="submit">Send</button>
+        </form>
+    </div>
+    </section>
+      </main>
+      <!-- website footer -->
+      <footer class="box">
+        <!-- HTML Entities -->
+        &copy;Lone Starfish&period;
+      </footer>
+      </div>
+    </body>
 
-<!-- website footer -->
-<footer>
-    <!-- HTML Entities -->
-    &copy;Lone Starfish&period;
-</footer>
-
-</section>
-</main>
-</body>
 <!-- Closing the html coding-->
 </html>
