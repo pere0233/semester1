@@ -148,13 +148,13 @@ html,body, h1,h2, h3{
   
   a{
     text-decoration: none;
-    color: #c78b07;
+    color: #c78b06;
   }
   
   ul {
     list-style: none;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
   }
    
   h2{
@@ -168,7 +168,7 @@ html,body, h1,h2, h3{
   }
   
   .margin-right-0{
-      padding-right: 0px;
+      padding-right: 0;
   }
   
   .margin-bottom-30{
@@ -183,7 +183,7 @@ html,body, h1,h2, h3{
   
   .wrapper{
       width: 80%;
-      margin: 0px auto;
+      margin: 0 auto;
   }
   
   .main-nav-links{
@@ -191,29 +191,29 @@ html,body, h1,h2, h3{
   }
   
   .site-header{
-      background: #222222;
+      background: #222;
       padding: 20px 0px 20px 0px;	
   }
   
   
   .nav-list li{
       display: inline-block;
-      color: #c78b07;
+      color: #c78b06;
       padding: 0;
       margin-right: 60px;
   }
   
   
   .nav-selected a, link{
-      color: #222222;
-      background: #c78b07;
+      color: #222;
+      background: #c78b06;
       padding: 10px 30px;
   }
   
   .nav-search-button{
       background: #222222;
-      border: 1px #c78b07 solid;
-      color: #c78b07;
+      border: 1px #c78b06 solid;
+      color: #c78b06;
       padding: 10px 10px;
       margin-top:5px;
       display: inline-block;
@@ -260,7 +260,7 @@ html,body, h1,h2, h3{
   
   .about-us{
       background:#ffe6ac;
-      padding: 20px 0px;
+      padding: 20px 0;
   }
   
   .about-us-image{
@@ -272,7 +272,7 @@ html,body, h1,h2, h3{
       display: inline-block;
       width: 45%;
       vertical-align:top;
-      padding: 0px 0px 0px 20px;
+      padding: 0 0 0 20px;
   }
   
   .our-services-container-two-column{
@@ -304,7 +304,7 @@ html,body, h1,h2, h3{
       background: url(../images/vision.jpg) center;
       background-size: cover;
       color: #fff;
-      padding: 30px 0px;
+      padding: 30px 0;
   }
   
   .learn-more-button{
@@ -312,7 +312,7 @@ html,body, h1,h2, h3{
       color: #fff;
       padding: 30px 20px 30px 30px;
       width: 150px;
-      border: 1px #c78b07 solid;
+      border: 1px #c78b06 solid;
   }
   
   .our-team{
@@ -351,7 +351,7 @@ html,body, h1,h2, h3{
   }
   
   table, td, th {
-    border: 1px solid #222222;
+    border: 1px solid #222;
     border-collapse: collapse;
     margin: 20px 0 20px 0px;
   }
@@ -371,14 +371,14 @@ html,body, h1,h2, h3{
   }
   
   .footer{
-      background: #222222;
-      color: #c78b07;
+      background: #222;
+      color: #c78c06;
       padding: 25px 0px 20px 0px;
   }
   
   .submit-button{
-      background: #222222;
-      color: #c78b07;
+      background: #222;
+      color:#c78c06;
       padding: 10px 15px;
       font-size: 16px;
   }
@@ -398,11 +398,11 @@ html,body, h1,h2, h3{
   
   .wrapper {
       width: 100%;
-      margin: 0px auto;
+      margin: 0 auto;
   }
   
   .site-header {
-      background: #222222;
+      background: #222;
        padding: 0px 0px 0px 0px; 
   }
   
@@ -418,7 +418,7 @@ html,body, h1,h2, h3{
   
   .nav-list li{
       display: block;
-      color: #c78b07;
+      color:#c78c06;
       padding: 0;
       margin-right:0px;
       width: 100%;
@@ -434,20 +434,20 @@ html,body, h1,h2, h3{
   }
   
   .site-header {
-      background: #222222;
+      background: #222;
       padding: 0px 0px 0px 0px; 
       display: flex;
   }
   
   .logo{
       width: 100%;
-      background: #c78b07;
+      background: #c78c06;
   }
   
   .nav-list li{
       width: 100%;
       display: inline-grid;
-      color: #c78b07;
+      color: #c78c06;
       padding: 0;
       margin-right: 0px;
       text-align: center;
@@ -497,7 +497,7 @@ html,body, h1,h2, h3{
       display: block;
       width: 93%;
       margin: 0px 10px 0px 10px;
-      background: #ffe6ac;
+      background:  #ffe6ac;
   }
   
   .our-vision .wrapper h3{
