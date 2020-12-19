@@ -1,8 +1,539 @@
-html {
-    font-family: 'Open Sans', sans-serif;
+/* ------------------
+       CSS Reset
+---------------------- */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed, 
+figure,
+figcaption,
+footer,
+header,
+hgroup, 
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure, 
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-.container {
+/* ------------------
+   Custom Styles
+---------------------- */
+html{
     max-width: 1200px;
     margin: 0 auto;
 }
+
+html,body, h1,h2, h3{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  a{
+    text-decoration: none;
+    color: #c78b07;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+  }
+   
+  h2{
+      font-size: 45px;
+      font-weight: 900;
+  }
+  
+  h3{
+      font-size: 35px;
+      font-weight: 900;
+  }
+  
+  .margin-right-0{
+      padding-right: 0px;
+  }
+  
+  .margin-bottom-30{
+      margin-bottom: 30px;
+      margin-top: 30px;
+  }
+  
+  
+  .padding-15px{
+      padding: 15px 15px;
+  }
+  
+  .wrapper{
+      width: 80%;
+      margin: 0px auto;
+  }
+  
+  .main-nav-links{
+      display: inline-block;
+  }
+  
+  .site-header{
+      background: #222222;
+      padding: 20px 0px 20px 0px;	
+  }
+  
+  
+  .nav-list li{
+      display: inline-block;
+      color: #c78b07;
+      padding: 0;
+      margin-right: 60px;
+  }
+  
+  
+  .nav-selected a, link{
+      color: #222222;
+      background: #c78b07;
+      padding: 10px 30px;
+  }
+  
+  .nav-search-button{
+      background: #222222;
+      border: 1px #c78b07 solid;
+      color: #c78b07;
+      padding: 10px 10px;
+      margin-top:5px;
+      display: inline-block;
+  }
+  
+  .nav-search-field{
+      height: 40px;
+  }
+  
+  .logo{
+      display: inline-block;
+  }
+  
+  .banner{
+      background: url(../images/main-banner.jpg);
+      padding: 40px 0px;
+  }
+  
+  .transbox{
+      background: rgba(0,0,0,.5);
+      padding: 60px 25px;
+  }
+  
+  .banner-header{
+      color: #ffffff;
+      font-size: 85px;
+      font-weight: 900;
+  }
+  .banner-description{
+      color: #ffffff;
+  }
+  
+  .connect-with-us-button{
+      background: #c78b07;
+      color: #000000;
+      padding: 30px 20px 30px 30px;
+      width: 150px;
+  }
+  
+  .connect-with-us-button-icon{
+      vertical-align: middle;
+      font-size: 16px !important;
+  }
+  
+  .about-us{
+      background:#ffe6ac;
+      padding: 20px 0px;
+  }
+  
+  .about-us-image{
+      display: inline-block;
+      width: 49%;
+  }
+  
+  .about-us-text{
+      display: inline-block;
+      width: 45%;
+      vertical-align:top;
+      padding: 0px 0px 0px 20px;
+  }
+  
+  .our-services-container-two-column{
+      display: inline-block;
+      width: 48.7%;
+      margin-right: 1%;
+      background: #ffe6ac;
+      margin-bottom: 20px;
+  }
+  
+  .our-services-container-info{
+      padding: 15px 15px;
+  }
+  
+  .our-services-container-three-column{
+      display: inline-block;
+      width: 32%;
+      margin-right: 1%;
+      background: #ffe6ac;
+  }
+  
+  .our-service-button{
+      background: #222222;
+      color: #ffffff;
+      padding: 30px 20px 30px 30px;
+  }
+  
+  .our-vision{
+      background: url(../images/vision.jpg) center;
+      background-size: cover;
+      color: #fff;
+      padding: 30px 0px;
+  }
+  
+  .learn-more-button{
+      background: rgba(15,27,44,.5);
+      color: #fff;
+      padding: 30px 20px 30px 30px;
+      width: 150px;
+      border: 1px #c78b07 solid;
+  }
+  
+  .our-team{
+      background: #ffe6ac;
+      display: block;
+  }
+  
+  .our-team-two-column{
+      display: inline-block;
+      width: 48.5%;
+      vertical-align: top;
+  }
+  
+  
+  .contact-us{
+      display: inline-block;
+      width: 48%;
+      vertical-align: top;
+  }
+  
+  label{
+      width: 100%;
+      display: block;
+  }
+  
+  input{
+      width: 95%;
+      height: 30px;
+      display: block;
+      margin-bottom: 15px;
+  }
+  
+  textarea{
+      width: 95%;
+      height: 150px;
+  }
+  
+  table, td, th {
+    border: 1px solid #222222;
+    border-collapse: collapse;
+    margin: 20px 0 20px 0px;
+  }
+  
+  table, thead, tbody{
+      width: 100%;
+      border: 1px solid;
+  }
+  
+  thead{
+      background: #ffe6ac;
+  }
+  
+  th, td{
+      height: 20px;
+      padding: 20px;
+  }
+  
+  .footer{
+      background: #222222;
+      color: #c78b07;
+      padding: 25px 0px 20px 0px;
+  }
+  
+  .submit-button{
+      background: #222222;
+      color: #c78b07;
+      padding: 10px 15px;
+      font-size: 16px;
+  }
+  
+  .search-container input{
+      width: 150px;
+      display: inline-block;
+  }
+  
+  /* --------------------
+      Desktop Styles
+  ----------------------- */
+  @media screen and (max-width: 760px){
+  body{
+      width: 100%;
+  }
+  
+  .wrapper {
+      width: 100%;
+      margin: 0px auto;
+  }
+  
+  .site-header {
+      background: #222222;
+       padding: 0px 0px 0px 0px; 
+  }
+  
+  .main-nav-links{
+      display: block;
+      float:none;
+      width: 100%;
+  }
+  
+  .main-header{
+      width: 100%;
+  }
+  
+  .nav-list li{
+      display: block;
+      color: #c78b07;
+      padding: 0;
+      margin-right:0px;
+      width: 100%;
+  }
+  }
+  
+  /* --------------------
+       Mobile Styles
+  ----------------------- */
+  @media only screen and (max-device-width: 480px) and (orientation : portrait){
+  .wrapper {
+      width: 100%;
+  }
+  
+  .site-header {
+      background: #222222;
+      padding: 0px 0px 0px 0px; 
+      display: flex;
+  }
+  
+  .logo{
+      width: 100%;
+      background: #c78b07;
+  }
+  
+  .nav-list li{
+      width: 100%;
+      display: inline-grid;
+      color: #c78b07;
+      padding: 0;
+      margin-right: 0px;
+      text-align: center;
+      margin-bottom: 20px;
+  }
+  
+  .search-container input {
+      width: 80%;
+      display: inline-block;
+  }
+  
+  .banner-header {
+      color: #ffffff;
+      font-size: 40px;
+      font-weight: 900;
+  }
+  
+  .about-us-image {
+      display: block;
+      width: 100%;
+  }
+  
+  h2{
+      font-size: 35px;
+      font-weight: 900;
+      margin-top: 20px;
+  }
+  
+  .about-us-text {
+      display: inline-block;
+      width: 89%;
+      vertical-align: top;
+      padding: 0px 0px 0px 20px;
+  }
+  
+  .our-services-container-two-column{
+      display: block;
+      width: 93%;
+      margin: 0px 10px 0px 10px;
+  }
+  
+  .padding-left{
+      padding-left:10px;
+  }
+  
+  .our-services-container-three-column {
+      display: block;
+      width: 93%;
+      margin: 0px 10px 0px 10px;
+      background: #ffe6ac;
+  }
+  
+  .our-vision .wrapper h3{
+      margin-left: 10px;
+  }
+  
+  .our-vision .wrapper p{
+      margin-left: 10px;
+      padding-right: 25px;
+  }
+  
+  .learn-more-button {
+      margin-left: 10px;
+      width: 80%;
+  }
+  
+  .our-team-two-column {
+      display: block;
+      width: 100%;
+  }
+  
+  .contact-us {
+      width: 98%;
+      vertical-align: top;
+      margin: 0px 10px 0px 10px;
+  }
+  
+  iframe { 
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 300px;
+  }
+  
+  .margin-top-30 {
+      margin-top: 30px;
+      margin-left:10px;
+  }
+  }
